@@ -15,7 +15,7 @@ nav {
 	height: 75px;
 	width: 100%;
 	text-align: center;
-	margin-bottom: 100px;
+	margin-bottom: 10%;
 }
 
 h1 {
@@ -29,12 +29,25 @@ h1 {
 
 .img {
 	text-align: center;
-	background:url("../images/j-smith.jpg") no-repeat;
+	background:url("../images/j-smith9.jpg") no-repeat;
   background-size: 500px 500px;
   background-position:-025px 0px;
   height: 400px;
   width: 400px;
   border-radius:50%;
   overflow:hidden;
-  margin: 100px auto;
+  /*margin: 10% 35% 5% 35%;*/
+  margin: 200px 500px 30px 300px;
+}
+
+.tweet {
+	display: table-cell;
+}
+
+.tweet h2{
+	width: 50%;
+	margin: 20px	250px 20px 240px;
+	height: 150px;
+	text-align: center;
+	vertical-align: center;
 }

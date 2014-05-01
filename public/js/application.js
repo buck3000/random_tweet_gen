@@ -4,4 +4,15 @@ $(document).ready(function() {
   // when we try to bind to them
 
   // See: http://docs.jquery.com/Tutorials:Introducing_$(document).ready()
+
+ $('body').click(function(){
+	 	$.ajax({
+	 		type: "POST",
+	 		url: '/',
+	 		data: {},
+	 		dataType: 'json'	
+	 	}).done(function(data){
+	 		$("h2").html(data);
+	 	})
+	 }); 
 });
