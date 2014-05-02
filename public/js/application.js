@@ -7,7 +7,7 @@ $(document).ready(function() {
 
  $('body').click(function(){
  		var random = Math.floor(Math.random() * 13) + 1;
- 		$(".img").css("background:", "url(../images/j-smith"+random+".jpg) no-repeat;")
+ 		$(".img").css("background", "url(../images/j-smith"+random+".jpg) no-repeat")
 	 	$.ajax({
 	 		type: "POST",
 	 		url: '/',
