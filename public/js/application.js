@@ -6,14 +6,14 @@ $(document).ready(function() {
   // See: http://docs.jquery.com/Tutorials:Introducing_$(document).ready()
 
  $('body').click(function(){
+ 		var random = Math.floor(Math.random() * 13) + 1;
+ 		$("div.img").css("background:", "url(../images/j-smith"+random+".jpg) no-repeat;");
 	 	$.ajax({
 	 		type: "POST",
 	 		url: '/',
 	 		dataType: 'json'	
 	 	}).done(function(data){
-	 		var random = Math.floor(Math.random() * 13) + 1;
 	 		$("h2").html(data);
-	 		$("div.img").css("background:", "url(../images/j-smith"+random+".jpg) no-repeat;");
 	 	})
 	 }); 
 });
