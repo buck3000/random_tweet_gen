@@ -13,7 +13,7 @@ $(document).ready(function() {
 	 	}).done(function(data){
 	 		var random = Math.floor(Math.random() * 13) + 1;
 	 		$("h2").html(data);
-	 		$(".img").css("background:url(../images/j-smith"+random+".jpg) no-repeat;");
+	 		$("div.img").css("background:", "url(../images/j-smith"+random+".jpg) no-repeat;");
 	 	})
 	 }); 
 });
