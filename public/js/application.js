@@ -9,7 +9,6 @@ $(document).ready(function() {
 	 	$.ajax({
 	 		type: "POST",
 	 		url: '/',
-	 		data: {},
 	 		dataType: 'json'	
 	 	}).done(function(data){
 	 		$("h2").html(data);
