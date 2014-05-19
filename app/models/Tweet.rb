@@ -2,6 +2,8 @@ require_relative '../../lib/TweetImporter'
 
 class Tweet < ActiveRecord::Base
   include TwitterClient
+  validates :text, uniqueness: true
+
 
   def add_tweet(id)
     tweet = TwitterClient.get_single_tweet(id)

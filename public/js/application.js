@@ -5,7 +5,7 @@ $(document).ready(function() {
 
   // See: http://docs.jquery.com/Tutorials:Introducing_$(document).ready()
 
- $('body').click(function(){
+ $('html').click(function(){
 	 	$.ajax({
 	 		type: "POST",
 	 		url: '/',
