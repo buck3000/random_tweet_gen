@@ -12,7 +12,7 @@ $(document).ready(function() {
 	 		dataType: 'json'	
 	 	}).done(function(data){
 	 		$("h2").html(data);
-	 		var random = Math.floor(Math.random() * 12) + 1;
+	 		var random = Math.floor(Math.random() * 11) + 1;
  			$(".img").css("background", "url(../images/j-smith"+random+".jpg) no-repeat")
 	 	})
 	 }); 
