@@ -19,6 +19,11 @@ gem 'rake'
 
 gem 'shotgun'
 
+
+gem 'neat'
+gem 'sass'
+gem 'bourbon'
+
 group :test do
   gem 'faker'
   gem 'rspec'

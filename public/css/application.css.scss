@@ -1,0 +1,74 @@
+.container {
+  margin: 1.25em auto;
+  width: 37.5em;
+  padding: 0 1.25em 1.25em 1.25em;
+  border: 1px dotted black;
+}
+th {
+  text-align: left;
+}
+
+nav {
+	position: fixed;
+	top: 0px;
+	background-color: black;
+	height: 5em;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 10%;
+}
+
+h1 {
+	color: white;
+}
+
+.perspective {
+	margin-top: 4.688em;
+	text-align: center;
+}
+
+.img {
+	text-align: center;
+	background:url("../images/j-smith9.jpg") no-repeat;
+  background-size: 31.25em 31.25em;
+  background-position:-1.563em 0;
+  height: 25em;
+  width: 25em;
+  border-radius:50%;
+  overflow:hidden;
+  /*margin: 10% 35% 5% 35%;*/
+  position: fixed;
+	top: 22%;
+	left: 35%;
+}
+
+.tweet {
+	display: table-cell;
+}
+
+.tweet h2{
+	width: 50%;
+	/*margin: 20px	250px 20px 240px;*/
+	height: 9.375em;
+	text-align: center;
+	vertical-align: center;
+	position: fixed;
+	top: 82%;
+	left: 25%;
+	margin-bottom: 2em;
+}
+
+/*@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) { 
+
+
+}*/
+
+/*@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) { /* STYLES GO HERE 
+	}*/
+
+
+
