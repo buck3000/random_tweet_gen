@@ -19,10 +19,8 @@ gem 'rake'
 
 gem 'shotgun'
 
+gem 'haml'
 
-gem 'neat'
-gem 'sass'
-gem 'bourbon'
 
 group :test do
   gem 'faker'

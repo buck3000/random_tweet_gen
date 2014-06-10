@@ -1,30 +1,72 @@
-.container {
-  margin: 1.25em auto;
-  width: 37.5em;
-  padding: 0 1.25em 1.25em 1.25em;
-  border: 1px dotted black;
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
 }
-th {
-  text-align: left;
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+
+/*  GROUPING  */
+.group:before,
+.group:after {
+	content:"";
+	display:table;
+}
+.group:after {
+	clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 */
+}
+                                               
+					
+/*  GRID OF THREE  */
+.span_3_of_3 {
+	width: 100%;
+}
+.span_2_of_3 {
+	width: 60.13%;
+
+}
+.span_1_of_3 {
+	width: 16.13%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.col { 
+		margin: 1% 0 1% 0%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.span_3_of_3 {
+		width: 100%; 
+	}
+	.span_2_of_3 {
+		width: 100%; 
+	}
+	.span_1_of_3 {
+		width: 100%;
+	}
 }
 
 nav {
-	position: fixed;
-	top: 0px;
 	background-color: black;
-	height: 5em;
-	width: 100%;
-	text-align: center;
-	margin-bottom: 10%;
-}
-
-h1 {
 	color: white;
-}
-
-.perspective {
-	margin-top: 4.688em;
-	text-align: center;
+	margin-top: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .img {
@@ -34,26 +76,16 @@ h1 {
   background-position:-1.563em 0;
   height: 25em;
   width: 25em;
+  margin: 0 auto;
   border-radius:50%;
   overflow:hidden;
-  /*margin: 10% 35% 5% 35%;*/
-  position: fixed;
-	top: 22%;
-	left: 35%;
+  position: relative;
+  margin-top: 5%;
 }
 
 .tweet {
-	display: table-cell;
+	position: relative;
+	margin-top: 5%;
+	margin-bottom: 5%;
 }
 
-.tweet h2{
-	width: 50%;
-	/*margin: 20px	250px 20px 240px;*/
-	height: 9.375em;
-	text-align: center;
-	vertical-align: center;
-	position: fixed;
-	top: 82%;
-	left: 25%;
-	margin-bottom: 2em;
-}

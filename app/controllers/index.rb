@@ -1,6 +1,6 @@
 get '/' do
   @tweet = Tweet.random_tweet
-  erb :index
+  haml :index
 end
 
 post '/' do 
